@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Alien Covenant",
+        "sinopsis": "Ridley Scott regresa al universo que creó en 'Alien' con 'Alien: Covenant', el segundo capítulo de una trilogía precuela que comenzó con 'Prometheus' — y conecta directamente con el seminal trabajo de ciencia ficción de Scott en 1979. Con rumbo a un remoto planeta en la parte más alejada de la galaxia, la tripulación de la nave colonial Covenant descubre lo que parece ser un paraíso inexplorado, cuando en realidad es un oscuro y peligroso mundo — cuyo único habitante es el 'sintético' David (Michael Fassbender), superviviente de la maldita expedición Prometheus.",
+        "genre": "Ciencia Ficción",
+        "image": "alienAlargarSagaMuerta2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Déjame Salir",
+        "sinopsis": "Un joven afroamericano visita a la familia de su novia blanca, un matrimonio adinerado. Para Chris (Daniel Kaluuya) y su novia Rose (Allison Williams) ha llegado el momento de conocer a los futuros suegros, por lo que ella le invita a pasar un fin de semana en el campo con sus padres, Missy (Catherine Keener) y Dean (Bradley Whitford). Al principio, Chris piensa que el comportamiento 'demasiado' complaciente de los padres se debe a su nerviosismo por la relación interracial de su hija, pero a medida que pasan las horas, una serie de descubrimientos cada vez más inquietantes le llevan a descubrir una verdad inimaginable.",
+        "genre": "Terror",
+        "image": "dejameSalir.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Fast & Furious 8",
+        "sinopsis": "Con Dom y Letty de luna de miel, Brian y Mia fuera del juego y el resto de la pandilla exonerada de todo cargo, el equipo está instalado en una vida aparentemente normal. Pero cuando una misteriosa mujer (Theron) seduce a Dom (Diesel) para regresar nuevamente al mundo del crimen, se ve incapaz de rechazar la oportunidad, traicionando así a todo el mundo cercano a él. A partir de ese momento todos se enfrentarán a pruebas como nunca antes habían tenido. Desde las costas de Cuba y las calles de Nueva York hasta las llanuras del mar de Barents en el océano Ártico, nuestra fuerza de élite recorrerá el globo para impedir que un anarquista desencadene el caos en el mundo... y por supuesto para traer de vuelta a casa al hombre que les hizo una familia.",
+        "genre": "Acción",
+        "image": "f&f8.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Gru 3",
+        "sinopsis": "A Gru lo han despedido. Se ha quedado sin trabajo porque ha dejado escapar al supervillano Balthazar Bratt. Bratt fue una estrella infantil de los años 80 protagonista de una serie donde interpretaba a una joven mente criminal que utilizaba una combinación entre técnicas de baile pop, artes marciales y juguetes de alta tecnología. Pero, con la llegada de la pubertad lo perdió todo y ha estado creando el caos en todo el planeta. Claro que ahora, Gru se enfrenta a otros problemas. Y es que va a conocer a su hermano gemelo Dru, un multimillonario igualito que él, pero con pelo largo y rubio que viste de blanco. Dru es excéntrico y extrovertido y Gru, aunque con sentido del humor, sigue siendo un cascarrabias. Además, ahora Gru tendrá que decidir si está listo para continuar la tradición familiar de dedicarse al crimen, y unirse a su hermano para llevar a cabo un último golpe. Aunque ha dejado esa vida atrás… ¿volverá a convertirse Gru en un villano? ",
+        "genre": "Animación",
+        "image": "gru3.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Wonder Woman",
+        "sinopsis": "Antes de ser Wonder Woman (Gal Gadot) era Diana, princesa de las Amazonas, entrenada para ser una guerrera invencible. Diana fue criada en una isla paradisíaca protegida. Hasta que un día un piloto norteamericano (Chris Pine), que tiene un accidente y acaba en sus costas, le habla de un gran conflicto existente en el mundo [Primera Guerra Mundial]. Diana decide salir de la isla convencida de que puede detener la terrible amenaza. Mientras lucha junto a los hombres en la guerra que acabará con todas las guerras, Diana descubre todos sus poderes y su verdadero destino.",
+        "genre": "Ciencia Ficción",
+        "image": "leHumaneMaraville.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Logan",
+        "sinopsis": "Sin sus poderes, por primera vez, Wolverine es verdaderamente vulnerable. Después de una vida de dolor y angustia, sin rumbo y perdido en el mundo donde los X-Men son leyenda, su mentor Charles Xavier lo convence para asumir una última misión: proteger a una joven que será la única esperanza para la raza mutante... Tercera y última película protagonizada por Hugh Jackman en el papel de Lobezno.",
+        "genre": "Ciencia Ficción",
+        "image": "logan&niñaLatina.jpg"
+    },
+    {
+        "id": 7,
+        "name": "La guerra del planeta de los simios",
+        "sinopsis": "César y sus monos son forzados a encarar un conflicto mortal contra un ejército de humanos liderado por un brutal coronel. Después de sufrir pérdidas enormes, César lucha con sus instintos más oscuros en una búsqueda por vengar a su especie. Cuando finalmente se encuentren, Cesar y el Coronel protagonizarán una batalla que pondrá en juego el futuro de ambas especies y el del mismo planeta. Tercera película de la nueva saga de 'El Planeta de los Simios'.",
+        "genre": "Ciencia Ficción",
+        "image": "monosQHablan3.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Piratas del Caribe: La venganza de Salazar",
+        "sinopsis": "El capitán Jack Sparrow se enfrentará a un grupo de piratas-fantasma comandados por una de sus viejas némesis, el terrorífico capitán Salazar, recién escapado del Triángulo de las Bermudas. La única posibilidad de Sparrow para salir con vida es encontrar el legendario Tridente de Poseidón, un poderoso artefacto que le da a su poseedor el control de los mares.",
+        "genre": "Fantástica",
+        "image": "piratasMierdosos.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Spiderman: Homecoming",
+        "sinopsis": "Peter Parker (Tom Holland) comienza a experimentar su recién descubierta identidad como el superhéroe Spider-Man. Después de la experiencia vivida con los Vengadores, Peter regresa a casa, donde vive con su tía (Marisa Tomei). Bajo la atenta mirada de su mentor Tony Stark (Robert Downey Jr.), Peter intenta mantener una vida normal como cualquier joven de su edad, pero interrumpe en su rutina diaria el nuevo villano Vulture (Michael Keaton) y, con él, lo más importante de la vida de Peter comenzará a verse amenazado.",
+        "genre": "Ciencia Ficción",
+        "image": "spidermanMenosMalo.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Transformers: El ultimo Caballero",
+        "sinopsis": "Dos especies en guerra: una de carne y hueso, la otra de metal. El Último Caballero rompe con el mito original de la franquicia de Transformers y redefine lo que significa ser un héroe. Humanos y Transformers están en guerra y Optimus Prime se ha ido. La llave para salvar nuestro futuro está enterrada en los secretos del pasado, en la historia oculta de los Transformers en la Tierra. Salvar a nuestro mundo está en manos de una alianza única: Cade Yeager (Mark Wahlberg); Bumblebee; un Lord Inglés (Sir Anthony Hopkins); y una profesora de la Universidad de Oxford (Laura Haddock). Hay un momento en la vida de todo ser humano en la que recibimos el llamado para hacer la diferencia. En Transformers: El Último Caballero los perseguidos se convertirán en héroes; los héroes se convertirán en villanos y sólo un mundo sobrevivirá: el de ellos o el nuestro. Quinta película de Transformers dirigida por Michael Bay.",
+        "genre": "Ciencia Ficción",
+        "image": "transformers34.jpg"
+    }
+]
