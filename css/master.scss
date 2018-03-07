@@ -94,27 +94,26 @@ body {
 }
 
 .details {
-    min-height: 90%;
+    height: 80%;
     width: 95%;
     border: thick solid transparent;
     background-image: url("../img/zwartevilt_@2x.jpg");
     border-image: url("../img/zwartevilt_@2x.jpg") 50 round;
     position: absolute;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
-    offset-inline-end: 5%;
+    offset-inline-end: 1%;
 }
 
 .details>button {
     width: 10%;
-    height: 10%;
+    height: 15%;
     font-size: 2vw;
-    position: absolute;
 }
 
 .sinopsis {
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding-left: 25%;
     padding-right: 5%;
     color: white;
@@ -162,6 +161,32 @@ input {
 #form button {
     font-size: 1.5vw;
     padding: 5px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-image: url("../img/zwartevilt_@2X.jpg");
+    height: 5%;
+    width: 100%;
+    border: solid thick black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+.free{
+    fill: green !important;
+}
+
+.busy{
+    fill: red !important;
+}
+
+.selected{
+    fill: blue !important;
 }
 
 @media screen and (max-width: 375px) {

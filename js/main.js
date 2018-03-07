@@ -102,7 +102,7 @@ function showInfo() {
         id = id.split("m");
         let movieData = data[id[1] - 1];
         $(movies[i]).next().append(
-            "<p tabindex='0' class='subtitle'>" + movieData.name + "<p class='sinopsis' tabindex='0'><span class='subtitle2'>Sinopsis:</span></br></br>" + movieData.sinopsis + "</p><button tabindex='0'> Votar</button>"
+            "<p tabindex='0' class='subtitle'>" + movieData.name + "<p class='sinopsis' tabindex='0'><span class='subtitle2'>Sinopsis:</span></br></br>" + movieData.sinopsis + "</p><button tabindex='0'> Comprar entradas</button>"
         );
         if (window.innerWidth > 1023) {
             $(movies[i]).next().find("button").position({
@@ -113,12 +113,7 @@ function showInfo() {
         }
         $(movies[i]).next().find("button").click(function () {
             selectedMovie = id[1] - 1;
-            $("#formDiv").show();
-            $("#formDiv").position({
-                my: "center center",
-                at: "center center",
-                of: $(document),
-            });
+            $(location).attr('href', 'selectSeats.html');
         });
     }
 }
