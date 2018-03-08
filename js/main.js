@@ -10,7 +10,7 @@ function load() {
         movies = $(".movie");
         data = json;
         for (let i = 0; i < data.length; i++) {
-            movies[i].style.backgroundImage = "url('/img/" + data[i].image + "')";
+            movies[i].style.backgroundImage = "url('img/" + data[i].image + "')";
             $(movies[i]).find("a").text(data[i].name);
             $(movies[i]).find("a").attr("aria-label", data[i].name)
         }
@@ -104,20 +104,3 @@ function showInfo() {
         });
     }
 }
-
-// function submitForm() {
-//     let votes_ = [];
-//     if (localStorage.getItem("votes") == null) {
-//         votes_ = [];
-//     } else {
-//         votes_ = JSON.parse(localStorage.getItem("votes"));
-//     }
-//     let vote = {
-//         name: $("#nameInput").val(),
-//         email: $("#emailInput").val(),
-//         movie: data[selectedMovie].name
-//     };
-//     votes_.push(vote);
-//     localStorage.setItem("votes", JSON.stringify(votes_));
-//     $(location).attr('href', 'results.html');
-// }
