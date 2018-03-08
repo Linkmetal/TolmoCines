@@ -25,7 +25,7 @@ if($(document).ready()){
 }
 
 function init_(){
-    readTextFile("/json/seats.json", function(text){
+    readTextFile("json/seats.json", function(text){
         data_ = JSON.parse(text);
         //seats = document.getElementsByTagName("use");
         for(let i = 0; i < seats.length; i++){
