@@ -70,12 +70,12 @@ function Data(){
             ind = ind[1];
             if(e.target.className.baseVal == "free"){
                 e.target.className.baseVal = "selected";
-                data_[ind].reserved = true;
+                data_[selectedMovie][selectedHour][ind].reserved = true;
             }
             else{
                 if(e.target.className.baseVal == "selected"){
                     e.target.className.baseVal = "free";
-                    data_[ind].reserved = false;
+                    data_[selectedMovie][selectedHour][ind].reserved = false;
                 }
             }
         }, false);
