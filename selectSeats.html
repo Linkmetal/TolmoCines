@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/selectSeats.css">
+    <link rel="stylesheet" href="css/materialUI.css">
     <link rel="icon" href="img/tolmo.svg">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -22,18 +23,17 @@
         </div>
         <div id="sala">
             <p tabindex="0" aria-label="Seleccione película y pulse enter para seleccionarla" class="subtitle2">Seleccione asiento</p>
-            <button onclick="submitReserve()">Reservar</button>
-            <svg id="svgSala" height="900" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <button id="butButton" onclick="submitReserve()">Comprar</button>
+            <svg id="svgSala" height="500" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <symbol id="butaca_" viewBox="0 0 400 400">
                     <rect height="170" rx="20" style="stroke:#000000;stroke-width:5" width="164" x="119" y="63.333335876464844" />
                     <rect height="251" rx="30" style="stroke:hsla(0, 0%, 0%, 1);stroke-width:5" width="47" x="71" y="23.333335876464844" />
                     <rect height="251" rx="30" style="stroke:hsla(0, 0%, 0%, 1);stroke-width:5" width="46" x="283" y="27.333335876464844" />
                     <rect height="55" rx="30" style="stroke:hsla(0, 0%, 0%, 1);stroke-width:5" width="283.00000000000006" x="58.99999999999997"
                         y="20.333335876464844" />
-                </symbol>            
-
+                </symbol>
             </svg>
-        </div>
+      
         <div id="footer">
             <span id="license">
                 <?xml version="1.0" encoding="UTF-8" standalone="no"?>

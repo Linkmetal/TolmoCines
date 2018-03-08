@@ -1,6 +1,18 @@
 let data_;
 let seats = [];
-
+let selectedMovie = parseInt(localStorage.getItem("selectedMovie") + 1);
+let selectedHour = parseInt(localStorage.getItem("selectedHour"));
+let precio = 7;
+var compra = {
+    nombre: "",
+    email: "",
+    entradas: 0,
+    asientos: [[]],
+    precioTotal: 0,
+    pelicula: 0,
+    hora: "",
+    fechaCompra: null
+}
 
 if($(document).ready()){
     if(localStorage.getItem("seats") == null){
@@ -42,12 +54,11 @@ function readTextFile(file, callback) {
 
 function Data(){
     for(let i = 1; i <= 45; i++){
-        document.getElementById("svgSala").innerHTML += ("<use id='butaca" + i + "' href='#butaca_' x='" + data_[i].x + "'y='" + data_[i].y + "' width='250' height='125'/>");
-        console.log(i);
+        document.getElementById("svgSala").innerHTML += ("<use id='butaca" + i + "' href='#butaca_' x='" + data_[selectedMovie][selectedHour][i].x + "'y='" + data_[selectedMovie][selectedHour][i].y + "' width='250' height='125'/>");
     }
     seats = document.getElementsByTagName("use");
     for(let i = 0; i < seats.length; i++){
-        if(data_[i+1].reserved == true){
+        if(data_[selectedMovie][selectedHour][i+1].reserved == true){
             seats[i].classList.add("busy");
         }
         else{
@@ -73,14 +84,26 @@ function Data(){
 
 function submitReserve(){
     localStorage.setItem("seats", JSON.stringify(data_));
+    
     let msg = "";
     for(let i = 0; i < seats.length; i++){
         if(seats[i].className.baseVal == "selected"){
-            data_[i+1].reserved = true;
-            msg += "Has reservado el asiento número " + data_[i+1].seat + " de la fila " + data_[i+1].row + ".\n";
+            data_[selectedMovie][selectedHour][i+1].reserved = true;
+            msg += "Has reservado el asiento número " + data_[selectedMovie][selectedHour][i+1].seat + " de la fila " + data_[selectedMovie][selectedHour][i+1].row + ".\n";
+            var aux = [];
+            aux.push(data_[selectedMovie][selectedHour][i+1].row);
+            aux.push(data_[selectedMovie][selectedHour][i+1].seat);
+            compra.asientos.push(aux);
+            compra.precioTotal += precio;
+            compra.entradas++;
+
         }
     }
+    compra.pelicula = selectedMovie;
+    compra.hora = selectedHour;
+    localStorage.setItem("compra", JSON.stringify(compra));
+    $("#formDiv").show();
     alert(msg);
-    Data();
+    $(location).attr('href', 'checkout.html');
 }
 

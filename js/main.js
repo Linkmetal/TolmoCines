@@ -3,6 +3,7 @@ let data = [];
 let moved = false;
 let moving = false;
 let selectedMovie;
+let selectedHour;
 
 function load() {
     $.getJSON("json/moviesData.json", function (json) {
@@ -19,14 +20,6 @@ function load() {
 
 $(document).ready(function () {
     load();
-    $("#submitForm").click(function (e) {
-        e.preventDefault();
-        submitForm();
-        return false;
-    });
-    $("#cancelForm").click(function () {
-        $("#formDiv").hide();
-    });
     $("#formDiv").hide();
     $(".details").hide();
     $(".movie").click(function (e) {
@@ -102,35 +95,29 @@ function showInfo() {
         id = id.split("m");
         let movieData = data[id[1] - 1];
         $(movies[i]).next().append(
-            "<p tabindex='0' class='subtitle'>" + movieData.name + "<p class='sinopsis' tabindex='0'><span class='subtitle2'>Sinopsis:</span></br></br>" + movieData.sinopsis + "</p><button tabindex='0'> Comprar entradas</button>"
+            "<p tabindex='0' class='subtitle'>" + movieData.name + "<p class='sinopsis' tabindex='0'><span class='subtitle2'>Sinopsis:</span></br></br>" + movieData.sinopsis + "</p><div class='movieControls'><span class='subtitle2'>Sesión: <select class='hour'><option value='1'>15:00</option><option value='2'>18:00</option><option value='3'>21:00</option></select></span><button tabindex='0'>Comprar</button></div>"
         );
-        if (window.innerWidth > 1023) {
-            $(movies[i]).next().find("button").position({
-                my: "center center",
-                at: "center-5% bottom-12%",
-                of: $(movies[i]).next(),
-            });
-        }
         $(movies[i]).next().find("button").click(function () {
-            selectedMovie = id[1] - 1;
+            localStorage.setItem("selectedMovie", selectedMovie = id[1] - 1);
+            localStorage.setItem("selectedHour", $(movies[i]).next().find("select").val());
             $(location).attr('href', 'selectSeats.html');
         });
     }
 }
 
-function submitForm() {
-    let votes_ = [];
-    if (localStorage.getItem("votes") == null) {
-        votes_ = [];
-    } else {
-        votes_ = JSON.parse(localStorage.getItem("votes"));
-    }
-    let vote = {
-        name: $("#nameInput").val(),
-        email: $("#emailInput").val(),
-        movie: data[selectedMovie].name
-    };
-    votes_.push(vote);
-    localStorage.setItem("votes", JSON.stringify(votes_));
-    $(location).attr('href', 'results.html');
-}
+// function submitForm() {
+//     let votes_ = [];
+//     if (localStorage.getItem("votes") == null) {
+//         votes_ = [];
+//     } else {
+//         votes_ = JSON.parse(localStorage.getItem("votes"));
+//     }
+//     let vote = {
+//         name: $("#nameInput").val(),
+//         email: $("#emailInput").val(),
+//         movie: data[selectedMovie].name
+//     };
+//     votes_.push(vote);
+//     localStorage.setItem("votes", JSON.stringify(votes_));
+//     $(location).attr('href', 'results.html');
+// }

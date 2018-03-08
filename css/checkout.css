@@ -1,0 +1,11 @@
+.card {
+  width: 50%;
+  left: 25%;
+}
+
+.subtitle3 {
+  text-align: center;
+  color: black;
+  font-size: 2vw;
+  font-weight: bolder;
+}
