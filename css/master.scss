@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/zwartevilt_@2x.jpg");
+    background-image: url("../img/zwartevilt_@2X.jpg");
 }
 
 #logo{
@@ -97,8 +97,8 @@ body {
     height: 80%;
     width: 95%;
     border: thick solid transparent;
-    background-image: url("../img/zwartevilt_@2x.jpg");
-    border-image: url("../img/zwartevilt_@2x.jpg") 50 round;
+    background-image: url("../img/zwartevilt_@2X.jpg");
+    border-image: url("../img/zwartevilt_@2X.jpg") 50 round;
     position: absolute;
     display: flex;
     flex-flow: column nowrap;
@@ -138,7 +138,7 @@ body {
     height: 50%;
     position: absolute;
     border: thick solid transparent;
-    border-image: url("../img/zwartevilt_@2x.jpg") 20 round;
+    border-image: url("../img/zwartevilt_@2X.jpg") 20 round;
     z-index: 5;
     display: flex;
     flex-flow: row wrap;
@@ -219,8 +219,8 @@ input {
         min-height: 90%;
         width: 95%;
         border: thick solid transparent;
-        background-image: url("../img/zwartevilt_@2x.jpg");
-        border-image: url("../img/zwartevilt_@2x.jpg") 50 round;
+        background-image: url("../img/zwartevilt_@2X.jpg");
+        border-image: url("../img/zwartevilt_@2X.jpg") 50 round;
         position: relative;
     }
 
