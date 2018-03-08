@@ -1,13 +1,13 @@
 let data_;
 let seats = [];
-let selectedMovie = parseInt(localStorage.getItem("selectedMovie") + 1);
+let selectedMovie = parseInt(localStorage.getItem("selectedMovie")) + 1;
 let selectedHour = parseInt(localStorage.getItem("selectedHour"));
 let precio = 7;
 var compra = {
     nombre: "",
     email: "",
     entradas: 0,
-    asientos: [[]],
+    asientos: [],
     precioTotal: 0,
     pelicula: 0,
     hora: "",

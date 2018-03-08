@@ -14,7 +14,9 @@ if($(document).ready()){
             compra.fechaCompra = new Date().toDateString();
             purchasesList.push(compra);
             localStorage.setItem("purchasesList", JSON.stringify(purchasesList));
+            localStorage.setItem("compra", JSON.stringify(compra));
             console.log(compra);
+            $(location).attr('href', 'details.html');
         }
         else{
             alert("Debe rellenar todos los campos");

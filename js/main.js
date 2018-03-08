@@ -99,6 +99,7 @@ function showInfo() {
         );
         $(movies[i]).next().find("button").click(function () {
             localStorage.setItem("selectedMovie", selectedMovie = id[1] - 1);
+            localStorage.setItem("movieName", movieData.name);
             localStorage.setItem("selectedHour", $(movies[i]).next().find("select").val());
             $(location).attr('href', 'selectSeats.html');
         });
